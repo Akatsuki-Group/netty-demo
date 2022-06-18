@@ -4,15 +4,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.tuling</groupId>
-    <artifactId>netty</artifactId>
+    <groupId>cn.enjoyedu</groupId>
+    <artifactId>netty-rpc-demo</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-
     <modules>
-        <module>netty-demo</module>
-        <module>netty-demo2</module>
-        <module>netty-rpc-demo</module>
+        <module>local-service</module>
+        <module>rpc-client</module>
+        <module>rpc-netty-client</module>
+        <module>rpc-netty-server</module>
+        <module>rpc-reg</module>
+        <module>rpc-server-sms</module>
+        <module>rpc-server-stock</module>
     </modules>
+
 
 </project>
