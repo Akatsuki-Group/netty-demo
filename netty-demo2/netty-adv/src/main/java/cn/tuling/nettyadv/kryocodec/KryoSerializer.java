@@ -34,6 +34,24 @@ public class KryoSerializer {
         out.writeBytes(b);
     }
 
+    /*序列化为一个字节数组，主要用在消息摘要上*/
+    public static byte[] obj2Bytes(Object object) {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        Output output = new Output(baos);
+        kryo.writeClassAndObject(output, object);
+        output.flush();
+        output.close();
+
+        byte[] b = baos.toByteArray();
+        try {
+            baos.flush();
+            baos.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return b;
+    }
+
     /*反序列化*/
     public static Object deserialize(ByteBuf out) {
         if (out == null) {

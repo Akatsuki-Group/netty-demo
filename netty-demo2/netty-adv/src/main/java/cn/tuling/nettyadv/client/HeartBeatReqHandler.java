@@ -1,7 +1,7 @@
 package cn.tuling.nettyadv.client;
 
 import cn.tuling.nettyadv.vo.MessageType;
-import cn.tuling.nettyadv.vo.MyHeader;
+import cn.tuling.nettyadv.vo.MsgHeader;
 import cn.tuling.nettyadv.vo.MyMessage;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
@@ -58,7 +58,7 @@ public class HeartBeatReqHandler extends ChannelInboundHandlerAdapter {
 
         private MyMessage buildHeatBeat() {
             MyMessage message = new MyMessage();
-            MyHeader myHeader = new MyHeader();
+            MsgHeader myHeader = new MsgHeader();
             myHeader.setType(MessageType.HEARTBEAT_REQ.value());
             message.setMyHeader(myHeader);
             return message;
