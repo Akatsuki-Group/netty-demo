@@ -11,6 +11,7 @@ public class EchoClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
     /*读取到网络数据后进行业务处理*/
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, ByteBuf msg) throws Exception {
+        System.out.println(System.currentTimeMillis());
         System.out.println("client Accept"+msg.toString(CharsetUtil.UTF_8));
         //ctx.close();
         ctx.close();

@@ -63,7 +63,7 @@ public class ThreadCall {
         @Override
         public void run() {
             /*发送邮件*/
-            UserInfo userInfo = new UserInfo("Mark","Mark@xiangxue.com");
+            UserInfo userInfo = new UserInfo("yct","yct@xiangxue.com");
             System.out.println("Send mail: "+ sendSms.sendMail(userInfo));
         }
     }

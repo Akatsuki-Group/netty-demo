@@ -13,9 +13,9 @@ public class ProtoBufClientHandler extends ChannelInboundHandlerAdapter {
     public void channelActive(ChannelHandlerContext ctx) {
        System.out.println("Prepare to make data........");
        PersonProto.Person.Builder builder = PersonProto.Person.newBuilder();
-        builder.setName("Mark");
+        builder.setName("yct");
         builder.setId(1);
-        builder.setEmail("Mark@enjoyedu.com");
+        builder.setEmail("yct@enjoyedu.com");
         System.out.println("send data........");
         ctx.writeAndFlush(builder.build());
 

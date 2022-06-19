@@ -9,7 +9,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertTrue;
 
 /**
- * 作者：Mark/Maoke
+ * 作者：yct/Maoke
  * 创建日期：2018/08/26
  * 类说明：只允许最大的帧的字节大小为设定的值,测试异常处理
  */

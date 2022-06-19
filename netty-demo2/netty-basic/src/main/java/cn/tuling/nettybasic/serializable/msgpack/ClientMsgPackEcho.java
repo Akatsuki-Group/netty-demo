@@ -13,7 +13,7 @@ import io.netty.handler.codec.LineBasedFrameDecoder;
 import java.net.InetSocketAddress;
 
 /**
- * 作者：Mark/Maoke
+ * 作者：yct/Maoke
  * 类说明：
  */
 public class ClientMsgPackEcho {

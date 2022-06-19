@@ -31,7 +31,7 @@ public class Client {
             input = new ObjectInputStream(socket.getInputStream());
             System.out.println("Ready send message.....");
             /*向服务器输出请求*/
-            output.writeUTF("Mark");
+            output.writeUTF("yct");
             output.flush();
 
             //接收服务器的输出

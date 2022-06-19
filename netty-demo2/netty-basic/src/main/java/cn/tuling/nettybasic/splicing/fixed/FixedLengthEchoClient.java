@@ -12,13 +12,13 @@ import io.netty.handler.codec.FixedLengthFrameDecoder;
 import java.net.InetSocketAddress;
 
 /**
- * 作者：Mark
+ * 作者：yct
  * 创建日期：2018/08/26
  * 类说明：
  */
 public class FixedLengthEchoClient {
 
-    public final static String REQUEST = "Mark,Lison,Peter,James,Deer";
+    public final static String REQUEST = "yct,Lison,Peter,James,Deer";
 
     private final String host;
 

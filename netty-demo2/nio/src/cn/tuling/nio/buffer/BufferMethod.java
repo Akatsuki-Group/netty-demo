@@ -71,12 +71,12 @@ public class BufferMethod {
         buffer.rewind();/*将position设回0*/
         System.out.println("before rewind:" + buffer);
 
-        System.out.println("--------Test mark AND reset----------");
+        System.out.println("--------Test yct AND reset----------");
         buffer = ByteBuffer.allocate(20);
         System.out.println("buffer = " + buffer);
         buffer.clear();
         buffer.position(5);/*移动position到5*/
-        buffer.mark();/*记录当前position的位置*/
+        buffer.yct();/*记录当前position的位置*/
         buffer.position(10);/*移动position到10*/
         System.out.println("before reset:" + buffer);
         buffer.reset();/*复位position到记录的地址*/

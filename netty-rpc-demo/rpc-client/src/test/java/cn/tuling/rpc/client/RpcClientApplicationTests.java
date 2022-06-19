@@ -23,7 +23,7 @@ class RpcClientApplicationTests {
         normalBusi.business();
 
         /*发送邮件*/
-        UserInfo userInfo = new UserInfo("Mark","Mark@xiangxue.com");
+        UserInfo userInfo = new UserInfo("yct","yct@xiangxue.com");
         System.out.println("Send mail: "+ sendSms.sendMail(userInfo));
         System.out.println("共耗时："+(System.currentTimeMillis()-start)+"ms");
 

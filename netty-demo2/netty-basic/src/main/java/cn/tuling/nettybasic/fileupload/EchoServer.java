@@ -11,7 +11,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import java.net.InetSocketAddress;
 
 /**
- * 作者：Mark/Maoke
+ * 作者：yct/Maoke
  * 类说明：基于Netty的服务器
  */
 public class EchoServer {
