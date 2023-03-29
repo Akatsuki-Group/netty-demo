@@ -42,6 +42,7 @@ public class NIOServerOld {
     }
 
     private static void handle(SelectionKey key) throws IOException {
+        //int ops = key.interestOps();
         if (key.isAcceptable()) {
             System.out.println("有客户端连接事件发生了。。");
             ServerSocketChannel ssc = (ServerSocketChannel) key.channel();

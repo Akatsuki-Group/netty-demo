@@ -1,6 +1,6 @@
 package cn.enjoyedu.nio.nio.outread;
 
-import cn.tuling.nio.Const;
+import cn.enjoyedu.nio.Const;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

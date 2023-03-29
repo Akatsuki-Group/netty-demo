@@ -1,6 +1,6 @@
 package cn.enjoyedu.nio.nio.outread;
 
-import static cn.tuling.nio.Const.DEFAULT_PORT;
+import static cn.enjoyedu.nio.Const.DEFAULT_PORT;
 
 /**
  * @author yct
