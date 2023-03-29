@@ -11,6 +11,8 @@
         <module>netty-basic</module>
         <module>netty-adv</module>
         <module>netty-http</module>
+        <module>nio</module>
+        <module>bio</module>
     </modules>
     <packaging>pom</packaging>
     <build>
